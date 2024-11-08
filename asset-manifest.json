@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8542122e.css",
+    "main.js": "/static/js/main.6a79cd51.js",
+    "static/js/478.1e6d6427.chunk.js": "/static/js/478.1e6d6427.chunk.js",
+    "static/js/922.b38c1dbd.chunk.js": "/static/js/922.b38c1dbd.chunk.js",
+    "static/js/161.5cfa422c.chunk.js": "/static/js/161.5cfa422c.chunk.js",
+    "static/js/151.03cf39cf.chunk.js": "/static/js/151.03cf39cf.chunk.js",
+    "static/css/888.5039d716.chunk.css": "/static/css/888.5039d716.chunk.css",
+    "static/js/888.b671c171.chunk.js": "/static/js/888.b671c171.chunk.js",
+    "static/js/209.2280f286.chunk.js": "/static/js/209.2280f286.chunk.js",
+    "static/js/625.2b5dcb17.chunk.js": "/static/js/625.2b5dcb17.chunk.js",
+    "static/js/745.c35e776e.chunk.js": "/static/js/745.c35e776e.chunk.js",
+    "static/js/825.eb420237.chunk.js": "/static/js/825.eb420237.chunk.js",
+    "static/media/Urbanist-VariableFont_wght.ttf": "/static/media/Urbanist-VariableFont_wght.7209716a3a23e09247b8.ttf",
+    "index.html": "/index.html",
+    "static/media/about.md": "/static/media/about.2fbe5935d2a0257146df.md",
+    "main.8542122e.css.map": "/static/css/main.8542122e.css.map",
+    "main.6a79cd51.js.map": "/static/js/main.6a79cd51.js.map",
+    "478.1e6d6427.chunk.js.map": "/static/js/478.1e6d6427.chunk.js.map",
+    "922.b38c1dbd.chunk.js.map": "/static/js/922.b38c1dbd.chunk.js.map",
+    "161.5cfa422c.chunk.js.map": "/static/js/161.5cfa422c.chunk.js.map",
+    "151.03cf39cf.chunk.js.map": "/static/js/151.03cf39cf.chunk.js.map",
+    "888.5039d716.chunk.css.map": "/static/css/888.5039d716.chunk.css.map",
+    "888.b671c171.chunk.js.map": "/static/js/888.b671c171.chunk.js.map",
+    "209.2280f286.chunk.js.map": "/static/js/209.2280f286.chunk.js.map",
+    "745.c35e776e.chunk.js.map": "/static/js/745.c35e776e.chunk.js.map",
+    "825.eb420237.chunk.js.map": "/static/js/825.eb420237.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8542122e.css",
+    "static/js/main.6a79cd51.js"
+  ]
+}

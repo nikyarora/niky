@@ -13,10 +13,19 @@
  */
 const work = [
   {
+    name: 'Lighten AI',
+    position: 'Founding Engineer',
+    url: 'https://www.lighten-ai.com/',
+    startDate: '2023-06',
+    highlights: [
+    ],
+  },
+  {
     name: 'McKinsey & Co.',
-    position: 'Senior Engineer 1',
+    position: 'Senior Engineer 2',
     url: 'https://www.mckinsey.com/',
     startDate: '2021-07',
+    endDate: '2023-05',
     highlights: [
       'Redesigned engineering processes for bug tracking, meetings, and standups. Improved culture for code reviews, blameless post-mortems, and retrospectives.',
       'Re-architected engineering hiring and onboarding processes. Recruited several strong engineers.',

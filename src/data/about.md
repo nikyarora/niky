@@ -1,10 +1,12 @@
 # Intro
 
-Hello! I am a Senior Engineer at McKinsey & Co, where I do client-facing development work for clients across numerous industries. Previously, I was an undergraduate at the University of California, Berkeley where I studied Electrical Engineering and Computer Science (EECS) and Business Administration. I'm interested in Machine Learning, Deep Neural Networks, Full-Stack Web Development, and Mobile Development. Please don't hesitate to reach out!
+Hello! I am a Founding Engineer at [Lighten AI](https://www.lighten-ai.com/), building foundational technology for clinical evidence generation. Formerly, I was a Senior Engineer at [McKinsey & Company](https://www.mckinsey.com/), where I did client-facing development work for clients across numerous industries and a Software Engineer Intern at [Google](https://www.google.com/), where I worked on ML infrastructure for Google News.
+
+I did my undergraduate at the [University of California, Berkeley](https://www.berkeley.edu/) where I studied Electrical Engineering and Computer Science (EECS) and Business Administration in the Haas School of Business. I'm interested in Machine Learning, Deep Neural Networks, Full-Stack Web Development, and Mobile Development. Please don't hesitate to reach out!
 
 <br/>
 
-I am originally from Los Altos Hills, California. I have since lived in Berkeley and currently live in New York City.
+I'm based in the San Francisco Bay Area!
 
 # Hobbies & Interests
 

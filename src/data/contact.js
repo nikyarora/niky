@@ -14,11 +14,6 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://facebook.com/d',
-    label: 'Facebook',
-    icon: faFacebookF,
-  },
-  {
     link: 'https://www.instagram.com/nikyarora/',
     label: 'Instagram',
     icon: faInstagram,

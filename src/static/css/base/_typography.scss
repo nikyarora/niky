@@ -6,9 +6,18 @@
 
 /* Type */
 
+	@font-face {
+		font-family: 'Urbanist';  // This is the name you'll use to reference it
+		src: url('Urbanist-VariableFont_wght.ttf') format('woff2'),  // Modern browsers
+			url('Urbanist-VariableFont_wght.ttf')  format('woff'),    // Older browsers
+			url('Urbanist-VariableFont_wght.ttf')  format('truetype'); // Even older browsers
+		font-weight: normal;
+		font-style: normal;
+	}
+
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: _font(family);
+		font-family: 'Urbanist';
 		font-size: 14pt;
 		font-weight: _font(weight);
 		line-height: 1.75;
@@ -74,7 +83,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
-		font-family: _font(family-heading);
+		font-family: 'Urbanist';
 		font-weight: _font(weight-heading-bold);
 		letter-spacing: _font(kerning-heading);
 		line-height: 1.65;

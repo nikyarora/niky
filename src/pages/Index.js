@@ -1,30 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
 
-const Index = () => (
-  <Main
-    description={"Nikhar Arora's personal website. New York based UC Berkeley graduate, "
-    + 'McKinsey senior engineer.'}
-  >
-    <article className="post" id="index">
-      <header>
-        <div className="title">
-          <h2><Link to="/">Welcome</Link></h2>
-          <p>
-            Thanks for visiting!
-          </p>
-        </div>
-      </header>
-      <p> Welcome to my website! Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
-        <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        or <Link to="/photography">photography</Link>! {' '}
-      </p>
-    </article>
-  </Main>
-);
+const Index = () => {
+  const [markdown, setMarkdown] = useState('');
+
+  useEffect(() => {
+    import('../data/about.md')
+      .then((res) => {
+        fetch(res.default)
+          .then((r) => r.text())
+          .then(setMarkdown);
+      });
+  });
+
+  return (
+    <Main
+      title="About"
+      description="Learn about Niky Arora"
+    >
+      <article className="post markdown" id="about">
+        <header>
+          <div className="title">
+            <h2><Link to="/about">About Me</Link></h2>
+          </div>
+        </header>
+        <Markdown>
+          {markdown}
+        </Markdown>
+      </article>
+    </Main>
+  );
+};
 
 export default Index;

@@ -1,11 +1,11 @@
 {
   "name": "nikhar",
   "version": "4.0.0",
-  "homepage": "https://nikyarora.github.io",
+  "homepage": "https://nikyarora.github.io/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mldangelo/personal-site.git"
+    "url": "https://github.com/nikyarora/niky.git"
   },
   "engines": {
     "node": ">=16.x"

@@ -14,8 +14,8 @@
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
-    "start": "react-scripts start",
+    "predeploy": "npm run build && serve -s build & react-snap",
+    "deploy": "gh-pages -d build",
     "test": "npx jest"
   },
   "dependencies": {

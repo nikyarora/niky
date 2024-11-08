@@ -2,11 +2,6 @@
 
 1. Clone the repository:
 
-    ```bash
-    git clone git://github.com/mldangelo/personal-site.git
-    cd personal-site
-    ```
-
 2. (Optional) Ensure you're on Node v16 or higher:
 
     ```bash

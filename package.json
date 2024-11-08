@@ -1,7 +1,7 @@
 {
   "name": "nikhar",
   "version": "4.0.0",
-  "homepage": "https://nikhar.com",
+  "homepage": "https://nikhar.com/",
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",

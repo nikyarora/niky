@@ -1,16 +1,11 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import PhotoAlbum from "react-photo-album";
 import gallery from '../../data/photography/gallery';
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const PhotographyGallery = () => {
-    const [index, setIndex] = useState(-1);
     const [currentGallery, setCurrentGallery] = useState('places');
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedPhoto, setSelectedPhoto] = useState(null);
 
     // Memoize the filtered galleries
     const { peopleGallery, placesGallery, palsGallery } = useMemo(() => ({
@@ -43,7 +38,6 @@ const PhotographyGallery = () => {
         }))
     }), []);
 
-    // Get current gallery based on selection
     const currentPhotos = useMemo(() => {
         switch(currentGallery) {
             case 'people': return peopleGallery;
@@ -53,8 +47,20 @@ const PhotographyGallery = () => {
         }
     }, [currentGallery, peopleGallery, placesGallery, palsGallery]);
 
-    // Memoize click handler
-    const handleClick = useCallback(({ index }) => setIndex(index), []);
+    const handleClick = (event) => {
+        // Access event.photo to get the photo object directly
+        if (event?.photo) {
+            console.log(event.photo.src)
+            setSelectedPhoto(event.photo.src);
+            setIsModalOpen(true);
+        }
+    };
+    console.log(selectedPhoto)
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedPhoto(null);
+    };
 
     return (
         <div>
@@ -82,46 +88,58 @@ const PhotographyGallery = () => {
             <PhotoAlbum 
                 layout="masonry"
                 photos={currentPhotos}
-                onClick={handleClick}
+                onClick={(e)=>handleClick(e)}
                 columns={(containerWidth) => {
                     if (containerWidth < 600) return 2;
                     if (containerWidth < 900) return 3;
                     return 4;
                 }}
                 spacing={20}
-                renderPhoto={({ photo, wrapperStyle, renderDefaultPhoto }) => (
-                    <div style={wrapperStyle}>
-                        <img
-                            src={photo.src}
-                            alt={photo.alt || ''}
-                            loading="lazy"
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                                display: 'block'
-                            }}
-                            srcSet={photo.srcSet?.map(s => `${s.src} ${s.width}w`).join(', ')}
-                            sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, 25vw"
-                        />
-                    </div>
-                )}
             />
 
-            <Lightbox
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
-                slides={currentPhotos}
-                styles={{ container: { backgroundColor: 'rgba(0, 0, 0, 0.9)' } }}
-                plugins={[Slideshow, Thumbnails, Zoom]}
-                carousel={{
-                    preload: 1,
-                }}
-                render={{
-                    buttonPrev: index === 0 ? () => null : undefined,
-                    buttonNext: index === currentPhotos.length - 1 ? () => null : undefined,
-                }}
-            />
+            {isModalOpen && selectedPhoto && (
+                <div className="modal" onClick={closeModal}>
+                    <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        <img src={selectedPhoto} alt={selectedPhoto.alt || ''} style={{ width: '100%' }} />
+                    </div>
+                </div>
+            )}
+
+        <style jsx>{`
+            .modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 2rem;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                z-index: 1000;
+            }
+            .modal-content {
+                position: relative;
+                width: 80%;
+                max-width: 800px;
+            }
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            /* Adjust image styling to fit within the modal view */
+            .modal-content img {
+                width: 100%;
+                max-height: 90vh; /* Ensures the image doesn’t take up more than 90% of viewport height */
+                object-fit: contain; /* Scales the image to fit within max height/width without distortion */
+            }
+        `}</style>
         </div>
     );
 };

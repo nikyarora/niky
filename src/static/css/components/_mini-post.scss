@@ -42,12 +42,33 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-gap: 10px;
   padding: 10px;
-  max-width: fit-content
+  width: 100%;
+  max-width: 1200px; /* or whatever max-width you prefer */
+  margin: 0 auto; /* centers the container */
 }
 
+/* Default: phones (1 column) */
+@media screen and (max-width: 599px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets (2 columns) */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop (3 columns) */
+@media screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .mini-post {
   @include vendor( 'display', 'flex');
   @include vendor( 'flex-direction', 'column');

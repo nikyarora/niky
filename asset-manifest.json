@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16b87ee0.css",
+    "main.js": "/static/js/main.32c15578.js",
+    "static/js/478.1e6d6427.chunk.js": "/static/js/478.1e6d6427.chunk.js",
+    "static/js/922.b38c1dbd.chunk.js": "/static/js/922.b38c1dbd.chunk.js",
+    "static/js/161.5cfa422c.chunk.js": "/static/js/161.5cfa422c.chunk.js",
+    "static/js/151.ef40d822.chunk.js": "/static/js/151.ef40d822.chunk.js",
+    "static/js/582.6ff96ae7.chunk.js": "/static/js/582.6ff96ae7.chunk.js",
+    "static/js/209.2280f286.chunk.js": "/static/js/209.2280f286.chunk.js",
+    "static/js/625.a76781dd.chunk.js": "/static/js/625.a76781dd.chunk.js",
+    "static/js/745.c35e776e.chunk.js": "/static/js/745.c35e776e.chunk.js",
+    "static/media/Urbanist-VariableFont_wght.ttf": "/static/media/Urbanist-VariableFont_wght.7209716a3a23e09247b8.ttf",
+    "index.html": "/index.html",
+    "static/media/about.md": "/static/media/about.0f45cc1ec360ceea2b05.md",
+    "main.16b87ee0.css.map": "/static/css/main.16b87ee0.css.map",
+    "main.32c15578.js.map": "/static/js/main.32c15578.js.map",
+    "478.1e6d6427.chunk.js.map": "/static/js/478.1e6d6427.chunk.js.map",
+    "922.b38c1dbd.chunk.js.map": "/static/js/922.b38c1dbd.chunk.js.map",
+    "161.5cfa422c.chunk.js.map": "/static/js/161.5cfa422c.chunk.js.map",
+    "151.ef40d822.chunk.js.map": "/static/js/151.ef40d822.chunk.js.map",
+    "582.6ff96ae7.chunk.js.map": "/static/js/582.6ff96ae7.chunk.js.map",
+    "209.2280f286.chunk.js.map": "/static/js/209.2280f286.chunk.js.map",
+    "745.c35e776e.chunk.js.map": "/static/js/745.c35e776e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16b87ee0.css",
+    "static/js/main.32c15578.js"
+  ]
+}

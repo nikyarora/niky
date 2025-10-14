@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknikhar=globalThis.webpackChunknikhar||[]).push([[625],{625:(a,c,e)=>{a.exports=e.p+"static/media/about.0f45cc1ec360ceea2b05.md"}}]);

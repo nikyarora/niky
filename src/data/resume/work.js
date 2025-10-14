@@ -13,10 +13,19 @@
  */
 const work = [
   {
+    name: 'Loyalist',
+    position: 'Founding Engineer',
+    url: 'https://www.loyalist.com/',
+    startDate: '2025-07',
+    highlights: [
+    ],
+  },
+  {
     name: 'Lighten AI',
     position: 'Founding Engineer',
     url: 'https://www.lighten-ai.com/',
-    startDate: '2023-06',
+    startDate: '2024-06',
+    endDate: '2025-06',
     highlights: [
     ],
   },
